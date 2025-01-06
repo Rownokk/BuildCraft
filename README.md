@@ -5,19 +5,7 @@ Welcome to **BuildCraft**, the innovative platform that transforms how construct
 ---
 
 <p align="center">
-    <img src="https://i.pinimg.com/736x/fe/21/c5/fe21c5a8c07c5897d7a4bb4a2ecfc77f.jpg" alt="BuildCraft" width="600" />
-    <a href="https://github.com/Rownokk/BuildCraft/graphs/contributors">
-        <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Rownokk/BuildCraft" />
-    </a>
-    <a href="https://github.com/Rownokk/BuildCraft/graphs/traffic">
-        <img alt="Repo View" src="https://komarev.com/ghpvc/?username=Rownokk&label=Profile%20views&color=blue&style=flat" />
-    </a>
-    <a href="https://github.com/Rownokk/BuildCraft/issues">
-        <img alt="Issues" src="https://img.shields.io/github/issues/Rownokk/BuildCraft?color=0088ff" />
-    </a>
-    <a href="https://github.com/Rownokk/BuildCraft/pulls">
-        <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Rownokk/BuildCraft?color=0088ff" />
-    </a>
+    <img src="https://i.pinimg.com/736x/fe/21/c5/fe21c5a8c07c5897d7a4bb4a2ecfc77f.jpg" alt="BuildCraft" width="400" />
 </p>
 
 ---
