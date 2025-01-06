@@ -1,6 +1,6 @@
 # 🏗️ **BuildCraft** - Where Innovation Meets Construction
 
-Welcome to **BuildCraft**, the innovative platform that transforms how construction businesses connect, manage, and deliver. From seamless client interactions to efficient project execution, we’re building smarter, faster, and with precision.
+Welcome to **BuildCraft**, the innovative platform that transforms how construction businesses connect, manage, and deliver. From seamless client interactions to efficient project execution, we’re building smarter, faster, and with precision
 
 ---
 
@@ -58,7 +58,7 @@ Our website reflects our commitment to user experience and efficiency.
 ## **📑 Project Proposal**
 
 Discover our detailed plan, including objectives, timelines, and strategies, in the official project proposal:  
-📄 [Download Project Proposal PDF](https://drive.google.com/file/d/1dIU-HJqLVFE39PzwaUeol_HWjkMW-mZL/view?usp=sharing)
+📄 [Project Proposal](https://drive.google.com/file/d/1dIU-HJqLVFE39PzwaUeol_HWjkMW-mZL/view?usp=sharing)
 
 ---
 
