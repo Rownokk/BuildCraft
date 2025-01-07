@@ -49,24 +49,27 @@ To create a modern **Construction Website** that simplifies client interactions,
 
 ---
 
-## **🔗 API Endpoints**  
+## **🔗 API Endpoints**
 
-| Method | Endpoint                     | Description                            |
-|--------|-------------------------------|----------------------------------------|
-| GET    | `/api/v1/results/:id`         | Fetch a specific result by ID          |
-| GET    | `/api/v1/results`             | Fetch all results                      |
-| POST   | `/api/v1/institution/student` | Add a new student                      |
-| PUT    | `/api/v1/institution/student/:id` | Update an existing student entry       |
-| DELETE | `/api/v1/institution/student/:id` | Remove a student                       |
-| POST   | `/api/v1/institution/result`  | Add a new result                       |
-| PUT    | `/api/v1/institution/result/:id` | Update an existing result entry        |
-| DELETE | `/api/v1/institution/result/:id` | Remove a result                        |
-| POST   | `/api/v1/auth/register`       | Register a new user                    |
-| POST   | `/api/v1/auth/login`          | User login                             |
-| GET    | `/api/v1/auth/logout`         | User logout                            |
-| GET    | `/api/v1/auth/profile`        | Fetch user profile                     |
-| POST   | `/api/v1/revalidation/apply`  | Apply for result revalidation          |
-| GET    | `/api/v1/revalidation/status/:id` | Check revalidation status by ID       |
+| **Method** | **Endpoint**                   | **Description**                                   |
+|------------|---------------------------------|--------------------------------------------------|
+| **GET**    | `/api/v1/projects`             | Fetch a list of all construction projects.       |
+| **GET**    | `/api/v1/projects/:id`         | Fetch details of a specific project by ID.       |
+| **POST**   | `/api/v1/projects`             | Add a new project (Admin only).                  |
+| **PUT**    | `/api/v1/projects/:id`         | Update an existing project by ID (Admin only).   |
+| **DELETE** | `/api/v1/projects/:id`         | Delete a specific project by ID (Admin only).    |
+| **GET**    | `/api/v1/clients`              | Fetch a list of all registered clients.          |
+| **POST**   | `/api/v1/clients/register`     | Register a new client.                           |
+| **GET**    | `/api/v1/clients/:id`          | Fetch details of a specific client by ID.        |
+| **POST**   | `/api/v1/inquiries`            | Submit a new inquiry or quote request.           |
+| **GET**    | `/api/v1/inquiries`            | Fetch all inquiries (Admin only).                |
+| **GET**    | `/api/v1/inquiries/:id`        | Fetch details of a specific inquiry by ID.       |
+| **POST**   | `/api/v1/auth/register`        | Register a new user (client, contractor, admin). |
+| **POST**   | `/api/v1/auth/login`           | Log in an existing user.                         |
+| **GET**    | `/api/v1/auth/logout`          | Log out the currently authenticated user.        |
+| **GET**    | `/api/v1/auth/profile`         | Fetch the profile of the logged-in user.         |
+| **POST**   | `/api/v1/reviews`              | Submit a testimonial or review.                  |
+| **GET**    | `/api/v1/reviews`              | Fetch all testimonials and reviews.              |
 
 ---
 
