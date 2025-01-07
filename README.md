@@ -14,6 +14,7 @@ We are redefining the way construction businesses operate by combining cutting-e
 
 - [📄 Project Overview](#-project-overview)
 - [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)
+- [🔗 API Endpoints](#-api-endpoints)
 - [🎨 UI Design](#-ui-design)
 - [📑 Project Proposal](#-project-proposal)
 - [👥 Team Members](#-team-members)
@@ -45,6 +46,27 @@ To create a modern **Construction Website** that simplifies client interactions,
 | **Database**    | MySQL            |
 | **Inquiry System** | Dynamic Forms |
 | **Analytics**   | Engagement Tools |
+
+---
+
+## **🔗 API Endpoints**  
+
+| Method | Endpoint                     | Description                            |
+|--------|-------------------------------|----------------------------------------|
+| GET    | `/api/v1/results/:id`         | Fetch a specific result by ID          |
+| GET    | `/api/v1/results`             | Fetch all results                      |
+| POST   | `/api/v1/institution/student` | Add a new student                      |
+| PUT    | `/api/v1/institution/student/:id` | Update an existing student entry       |
+| DELETE | `/api/v1/institution/student/:id` | Remove a student                       |
+| POST   | `/api/v1/institution/result`  | Add a new result                       |
+| PUT    | `/api/v1/institution/result/:id` | Update an existing result entry        |
+| DELETE | `/api/v1/institution/result/:id` | Remove a result                        |
+| POST   | `/api/v1/auth/register`       | Register a new user                    |
+| POST   | `/api/v1/auth/login`          | User login                             |
+| GET    | `/api/v1/auth/logout`         | User logout                            |
+| GET    | `/api/v1/auth/profile`        | Fetch user profile                     |
+| POST   | `/api/v1/revalidation/apply`  | Apply for result revalidation          |
+| GET    | `/api/v1/revalidation/status/:id` | Check revalidation status by ID       |
 
 ---
 
