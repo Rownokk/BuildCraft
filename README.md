@@ -99,7 +99,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
     </tr>
     <tr>
       <td>Database</td>
-      <td>phpMyAdmin</td>
+      <td>MySQL</td>
     </tr>
       <tr>
       <td>Rendering Method</td>
