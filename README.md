@@ -91,7 +91,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
   <tbody>
     <tr>
       <td>Frontend</td>
-      <td>ReactJS</td>
+      <td>React.JS</td>
     </tr>
     <tr>
       <td>Backend</td>
