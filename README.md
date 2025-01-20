@@ -1,143 +1,208 @@
-# 🏗️ **BuildCraft** - Where Innovation Meets Construction
+# **BuildCraft 🏗️**
 
-Welcome to **BuildCraft** — your gateway to the future of construction!  
-
-We are redefining the way construction businesses operate by combining cutting-edge technology with industry expertise. **BuildCraft** empowers you to seamlessly connect with clients, efficiently manage projects, and execute with unmatched precision.  
-
----
-<p align="center">
-    <img src="https://i.pinimg.com/736x/fe/21/c5/fe21c5a8c07c5897d7a4bb4a2ecfc77f.jpg" alt="BuildCraft" width="400" />
-</p>
-
-
-## **Table of Contents**
-
-- [📄 Project Overview](#-project-overview)
-- [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)
-- [🔗 API Endpoints](#-api-endpoints)
-- [🎨 UI Design](#-ui-design)
-- [📑 Project Proposal](#-project-proposal)
-- [👥 Team Members](#-team-members)
-- [🚀 Strategy and Timeline](#-strategy-and-timeline)
-- [📅 Features and Timeline](#-features-and-timeline)
-- [🌟 Conclusion](#-conclusion)
+## **Project Overview** 🌟
+BuildCraft is an innovative project management system tailored for construction firms and contractors. Developed using **ReactJS for the frontend** and **PHP with Laravel for the backend**, this platform offers a secure, scalable, and user-friendly interface for managing projects, schedules, resources, and teams. BuildCraft ensures seamless communication and efficient management across all levels of construction project workflows.
 
 ---
 
-## **📄 Project Overview**
-
-### **Objective**  
-To create a modern **Construction Website** that simplifies client interactions, showcases projects, and streamlines communication between contractors and clients.
-
-### **Key Features**  
-- **Interactive Project Browsing**: Showcase ongoing and completed construction projects with detailed information.  
-- **Client Dashboard**: Track project progress, timelines, and invoices.  
-- **Secure Inquiry System**: Streamlined quote requests and client interactions.  
-- **Engagement Features**: Include blogs, testimonials, and event calendars.  
+## **Title** 📌
+**BuildCraft: Revolutionizing Construction Project Management with ReactJS & Laravel**
 
 ---
 
-## **🛠️ Tech Stack**
-
-| Component       | Technology       |
-|------------------|------------------|
-| **Frontend**    | React.js         |
-| **Backend**     | Laravel          |
-| **Database**    | MySQL            |
-| **Inquiry System** | Dynamic Forms |
-| **Analytics**   | Engagement Tools |
+## **Objective** 🎯
+The primary objective of BuildCraft is to provide an integrated platform that:
+- Facilitates efficient management of construction projects, resources, schedules, and tasks.
+- Provides secure, role-based access for users (contractors, project managers, clients).
+- Enhances communication between stakeholders for smooth project execution.
+- Allows administrators to monitor project progress and generate reports.
+- Ensures a seamless user experience through an intuitive UI and responsive design.
 
 ---
 
-## **🔗 API Endpoints**
-
-| **Method** | **Endpoint**                   | **Description**                                   |
-|------------|---------------------------------|--------------------------------------------------|
-| **GET**    | `/api/v1/projects`             | Fetch a list of all construction projects.       |
-| **GET**    | `/api/v1/projects/:id`         | Fetch details of a specific project by ID.       |
-| **POST**   | `/api/v1/projects`             | Add a new project (Admin only).                  |
-| **PUT**    | `/api/v1/projects/:id`         | Update an existing project by ID (Admin only).   |
-| **DELETE** | `/api/v1/projects/:id`         | Delete a specific project by ID (Admin only).    |
-| **GET**    | `/api/v1/clients`              | Fetch a list of all registered clients.          |
-| **POST**   | `/api/v1/clients/register`     | Register a new client.                           |
-| **GET**    | `/api/v1/clients/:id`          | Fetch details of a specific client by ID.        |
-| **POST**   | `/api/v1/inquiries`            | Submit a new inquiry or quote request.           |
-| **GET**    | `/api/v1/inquiries`            | Fetch all inquiries (Admin only).                |
-| **GET**    | `/api/v1/inquiries/:id`        | Fetch details of a specific inquiry by ID.       |
-| **POST**   | `/api/v1/auth/register`        | Register a new user (client, contractor, admin). |
-| **POST**   | `/api/v1/auth/login`           | Log in an existing user.                         |
-| **GET**    | `/api/v1/auth/logout`          | Log out the currently authenticated user.        |
-| **GET**    | `/api/v1/auth/profile`         | Fetch the profile of the logged-in user.         |
-| **POST**   | `/api/v1/reviews`              | Submit a testimonial or review.                  |
-| **GET**    | `/api/v1/reviews`              | Fetch all testimonials and reviews.              |
+## **Table of Contents** 📚
+1. 👩‍💻 [Team Members](#team-members)  
+2. 🎯 [Target Audience](#target-audience)  
+3. 🛠️ [Tech Stack](#tech-stack)  
+4. 🎨 [UI Design](#ui-design)  
+5. ✨ [Project Features](#project-features)  
+   - [User Section](#user-section) 👥  
+   - [Admin Section](#admin-section) 🛡️  
+   - [Project Manager Section](#project-manager-section) 🏗️  
+   - [Client Section](#client-section) 🏢  
+6. 🌐 [API Endpoints](#api-endpoints)  
+7. 🏁 [Milestones](#milestones)  
 
 ---
 
-## **🎨 UI Design**
-
-Our website reflects our commitment to user experience and efficiency.  
-✨ [Explore the UI on Canva](https://www.canva.com/design/DAGbNmKSkSg/41E6xieTh_pG6wRGAugLdA/edit?utm_content=DAGbNmKSkSg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) ✨  
-
----
-
-## **📑 Project Proposal**
-
-Discover our detailed plan, including objectives, timelines, and strategies, in the official project proposal:  
-📄 [Project Proposal](https://drive.google.com/file/d/1dIU-HJqLVFE39PzwaUeol_HWjkMW-mZL/view?usp=sharing)
-
----
-
-## **👥 Team Members**
-
-| Name                  | ID           | Role                          |
-|------------------------|--------------|-------------------------------|
-| Rownok Jahan Mowmita  | 20220104151  | Lead, Frontend & Backend Dev |
-| Umme Jamila           | 20220104143  | Frontend & Backend Dev       |
-| Authoi Chowdhury      | 20220104149  | Frontend Developer           |
-
----
-
-## **🚀 Strategy and Timeline**
-
-### **Project Milestones**
-1. **Proposal Submission**: Outlining scope, features, and technologies.  
-2. **Checkpoint 1**: Wireframe design, layout, and backend structure.  
-3. **Checkpoint 2**: Integration of frontend and backend functionalities.  
-4. **Final Submission**: Fully functional website with documentation.
-
-### **Marks Distribution**
-
-| Evaluation Criteria     | Marks (%) |
-|--------------------------|-----------|
-| Attendance              | 20%       |
-| Assignment              | 10%       |
-| Project Proposal        | 5%        |
-| Checkpoint 1            | 15%       |
-| Checkpoint 2            | 15%       |
-| Final Submission        | 20%       |
-| Lab Exam                | 15%       |
-| **Total**               | **100%**  |
+## **Team Members** 👩🏻‍💻 <a id="team-members"></a>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>GitHub</th>
+      <th> Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20220104151</td>
+      <td>Rownok Jahan Mowmita</td>
+      <td>mowmita878@gmail.com</td>
+      <td>Rownokk</td>
+      <td>Lead Developer (Frontend + Backend)</td>
+    </tr>
+    <tr>
+      <td>20220104143</td>
+      <td>Umme Jamila</td>
+      <td>jamila.cse.20220104143@aust.edu</td>
+      <td>jamila143</td>
+      <td>Frontend + Backend</td>
+    </tr>
+    <tr>
+      <td>20220104149</td>
+      <td>Authoi Chowdhury</td>
+      <td>authoichy016@gmail.com</td>
+      <td>AuthoiChy</td>
+      <td>Frontend Developer</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## **📅 Features and Timeline**
-
-### **Core Features**
-- User registration and login for clients, contractors, and managers.  
-- Project browsing and dashboards for tracking progress.  
-- Quote requests, invoice management, and client interaction.  
-- Blog section, testimonials, and event calendars.  
-
-### **Development Timeline**
-- **Phase 1**: Proposal and initial designs.  
-- **Phase 2**: Wireframes, backend API, and database setup.  
-- **Phase 3**: Frontend-backend integration and core functionality.  
-- **Phase 4**: Testing, debugging, and final delivery.
+## **Target Audience** 🎯 <a id="target-audience"></a>
+1. **Construction Companies**: Streamline project operations and resource allocation.  
+2. **Project Managers**: Monitor project progress, assign tasks, and manage schedules.  
+3. **Clients**: Track project progress, view reports, and provide feedback.
 
 ---
 
-## **🌟 Conclusion**
+## **Tech Stack** 🛠️ <a id="tech-stack"></a>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Technology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontend</td>
+      <td>ReactJS</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>Laravel (PHP)</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>phpMyAdmin</td>
+    </tr>
+      <tr>
+      <td>Rendering Method</td>
+      <td>CSR (Client-Side Rendering)</td>
+    </tr>
+    <tr>
+      <td>Version Control</td>
+      <td>Git</td>
+    </tr>
+    <tr>
+      <td>Repository</td>
+      <td>GitHub</td>
+    </tr>
+  </tbody>
+</table>
 
-BuildCraft represents a significant step forward in modernizing construction management. By utilizing advanced technologies like **Laravel** and **React.js**, we aim to create a platform that enhances client relationships, streamlines communication, and showcases expertise.  
+---
 
-🚀 **Together, let’s build a smarter, more connected tomorrow.**
+## **UI Design** 🎨 <a id="ui-design"></a>
+**Canva Design**: [BuildCraft UI Design](https://www.canva.com/design/DAGcjchGX0w/9iNz5qcqHhUsYvSCKEK9Pg/edit?utm_content=DAGcjchGX0w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+
+---
+
+## **Project Features** ✨ <a id="project-features"></a>
+
+### **User Section** 👥 <a id="user-section"></a>
+- 🔐 Secure multi-role login (Admin, Project Manager, Client).  
+- 📊 Role-based access control for data and actions.  
+- 🛠️ CRUD operations for project-related data (e.g., schedules, resources, tasks).  
+- 🔍 Search and filter functionality for records.  
+
+### **Admin Section** 🛡️ <a id="admin-section"></a>
+- 👥 Manage user roles and permissions.  
+- ✅ Approve or reject new project requests.  
+- 📑 Generate reports for project progress and resource usage.  
+- 🔒 Multi-admin authentication and password recovery.  
+
+### **Project Manager Section** 🏗️ <a id="project-manager-section"></a>
+- ✅ Assign and monitor tasks for team members.  
+- 📅 Manage project schedules and milestones.  
+- 📢 Communicate with clients and contractors.  
+
+### **Client Section** 🏢 <a id="client-section"></a>
+- 📖 View project updates, timelines, and reports.  
+- 💬 Provide feedback and request changes.  
+- 📝 Track invoices and payments.  
+
+---
+
+## **API Endpoints** 🌐 <a id="api-endpoints"></a>
+
+### **Authentication** 🔒
+- **POST** `/api/auth/register` - Register users with roles (Admin, Project Manager, Client).  
+- **POST** `/api/auth/login` - Login for all roles.  
+- **POST** `/api/auth/logout` - Logout securely.  
+- **POST** `/api/auth/forgot-password` - Password recovery via email.  
+- **POST** `/api/auth/reset-password` - Reset password using a token.  
+
+### **Admin APIs** 🛠️
+- **GET** `/api/admin/projects` - Retrieve a list of all projects.  
+- **POST** `/api/admin/projects/approve` - Approve or reject project requests.  
+- **DELETE** `/api/admin/projects/{id}` - Remove a project.  
+
+### **Project Manager APIs** 📊
+- **GET** `/api/manager/tasks` - Retrieve assigned tasks.  
+- **POST** `/api/manager/tasks` - Create or update tasks.  
+- **GET** `/api/manager/resources` - Manage resource allocation.  
+
+### **Client APIs** 📚
+- **GET** `/api/clients/projects` - View project details.  
+- **POST** `/api/clients/feedback` - Submit feedback and queries.  
+- **GET** `/api/clients/invoices` - View invoices and payment status.  
+
+---
+
+## **Milestones** 🏁 <a id="milestones"></a>
+<table>
+  <thead>
+    <tr>
+      <th>🎯 Milestone</th>
+      <th>📜 Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Checkpoint 1</td>
+      <td>
+        <ul>
+          <li>Frontend and backend setup.</li>
+          <li>User authentication system.</li>
+          <li>Database design for project and user data.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Checkpoint 2</td>
+      <td>
+        <ul>
+          <li>Project and task management features.</li>
+          <li>Progress tracking dashboards.</li>
+          <li>Communication module between clients and managers.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
