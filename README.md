@@ -1,12 +1,12 @@
 # **BuildCraft 🏗️**
 
 ## **Project Overview** 🌟
-BuildCraft is an innovative project management system tailored for construction firms and contractors. Developed using **ReactJS for the frontend** and **PHP with Laravel for the backend**, this platform offers a secure, scalable, and user-friendly interface for managing projects, schedules, resources, and teams. BuildCraft ensures seamless communication and efficient management across all levels of construction project workflows.
+BuildCraft is an innovative project management system tailored for construction firms and contractors. Developed using **ReactJS for the frontend** and **Laravel for the backend**, this platform offers a secure, scalable, and user-friendly interface for managing projects, schedules, resources, and teams. BuildCraft ensures seamless communication and efficient management across all levels of construction project workflows.
 
 ---
 
 ## **Title** 📌
-**BuildCraft: Revolutionizing Construction Project Management with ReactJS & Laravel**
+**BuildCraft: Revolutionizing Construction Project Management with React.JS & Laravel**
 
 ---
 
@@ -95,7 +95,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
     </tr>
     <tr>
       <td>Backend</td>
-      <td>Laravel (PHP)</td>
+      <td>Laravel </td>
     </tr>
     <tr>
       <td>Database</td>
