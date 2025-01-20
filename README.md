@@ -119,7 +119,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
 ---
 
 ## **UI Design** 🎨 <a id="ui-design"></a>
-**Canva Design**: [BuildCraft UI Design](https://www.canva.com/design/DAGcjchGX0w/9iNz5qcqHhUsYvSCKEK9Pg/edit?utm_content=DAGcjchGX0w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+**Canva Design**: [BuildCraft UI Design](https://www.canva.com/design/DAGbNmKSkSg/41E6xieTh_pG6wRGAugLdA/edit?utm_content=DAGbNmKSkSg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
 
 ---
 
@@ -200,9 +200,18 @@ The primary objective of BuildCraft is to provide an integrated platform that:
         <ul>
           <li>Project and task management features.</li>
           <li>Progress tracking dashboards.</li>
+        </ul>
+      </td>
+    </tr>
+     <tr>
+      <td>Checkpoint 3</td>
+      <td>
+        <ul>
+          <li>Testing, debugging, and final delivery.</li>
           <li>Communication module between clients and managers.</li>
         </ul>
       </td>
     </tr>
+  
   </tbody>
 </table>
