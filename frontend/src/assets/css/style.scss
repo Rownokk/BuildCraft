@@ -4,6 +4,7 @@ $secondary-color:#FFB703;
 $text-color:#000;
 $text-white:#FFFFFF;
 $dark-background:#222725;
+$light-background:#e9e7e5;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
@@ -19,7 +20,7 @@ h2{
     font-size: 3em;
 }
 h3{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 p{
@@ -31,6 +32,10 @@ ul{
     li{
         list-style: none;
     }
+}
+
+.bg-light{
+    background-color: $light-background;
 }
 .btn-primary{
     background-color: $primary-color;
@@ -56,6 +61,20 @@ ul{
     border:1px solid $primary-color;
     }
 }
+.section-header{
+    span{
+        color:$primary-color ;
+        font-size: 1.2em;
+   
+        padding-bottom: 10px;
+        display: block;
+        text-transform: uppercase;
+        font-weight:500;
+    }
+
+}
+
+
 header{
     nav{
         .nav-link{
@@ -120,4 +139,64 @@ footer{
     padding-bottom: 10px;
 
   }
+}
+
+.section-3{
+.item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: $text-white;
+    &:hover{
+        .service-body{
+            transform:translateY(0%);
+            .service-content{
+                opacity: 1;
+            }
+        }
+    }
+    .service-image{
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            border-radius: 40px;
+            aspect-ratio: 1/1.2;
+            object-fit: cover;
+        }
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 40px;
+        background: linear-gradient(180deg,rgba (217,217,217,0) 0%, rgba(217,217,217,0)
+        13.02%,rgba(0,0,0,0.51)42.5%, rgba(0,0,0,0.63)70%,#000000 100%);
+
+    }
+    }
+
+    .service-body{
+        position: absolute;
+left: 30px;
+right: 30px;
+bottom: 30px;
+transform:translateY(80%);
+transition: all 0.4s ease-in-out;
+.service-content{
+    transition: all 0.4s ease-in-out;
+    opacity:0;
+
+}
+    }
+}
+}
+
+.section-4{
+    .card{
+        border-radius: 40px;
+        margin-bottom: 20px;
+    }
 }
