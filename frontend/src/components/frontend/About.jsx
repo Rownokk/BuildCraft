@@ -3,7 +3,9 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { default as AboutNew } from '../common/About';
 import BlogImg from '../../assets/images/construction3.jpg';
-import MemberImg from '../../assets/images/team1.jpg';
+import MemberImg1 from '../../assets/images/Mowmita.jpg';
+import MemberImg2 from '../../assets/images/jamila.jpg';
+import MemberImg3 from '../../assets/images/authoi.jpg';
 
 const About = () => {
   return (
@@ -38,7 +40,7 @@ const About = () => {
               <div className='col-md-4'>
                 <div className='card shadow border-0'>
                   <div className='card-img-top'>
-                    <img src={MemberImg} alt='Construction project' className='w-100' />
+                    <img src={MemberImg2} alt='Construction project' className='w-100' />
                   </div>
                   <div className='card-body p-4'>
                     <div className='mb-3'>
@@ -51,7 +53,7 @@ const About = () => {
               <div className='col-md-4'>
                 <div className='card shadow border-0'>
                   <div className='card-img-top'>
-                    <img src={MemberImg} alt='Team Member' className='w-100' />
+                    <img src={MemberImg1} alt='Team Member' className='w-100' />
                   </div>
                   <div className='card-body p-4'>
                     <div className='mb-3'>
@@ -64,7 +66,7 @@ const About = () => {
               <div className='col-md-4'>
                 <div className='card shadow border-0'>
                   <div className='card-img-top'>
-                    <img src={MemberImg} alt='Construction project' className='w-100' />
+                    <img src={MemberImg3} alt='Construction project' className='w-100' />
                   </div>
                   <div className='card-body p-4'>
                     <div className='mb-3'>
