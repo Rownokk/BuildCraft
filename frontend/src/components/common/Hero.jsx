@@ -8,9 +8,7 @@ const Hero = ({ preHeading, Heading, text }) => {
           <div className='text-left'>
             <span>{preHeading}</span>
             <h1>{Heading}</h1>
-            <p>
-              {text}
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: text }}></p>
           </div>
         </div>
       </div>
