@@ -14,7 +14,7 @@ const About = () => {
       <main>
         <Hero 
           preHeading="Quality. Integrity. Value" 
-          Heading="About Us"
+          heading="About Us"
           text="We excel at transforming visions into reality <br/> through outstanding craftsmanship & Precision."
         />
         <AboutNew />

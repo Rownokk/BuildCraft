@@ -8,6 +8,7 @@ import Home from './components/frontend/Home';
 import About from './components/frontend/About';
 import Services from './components/frontend/Services'; // Importing the Services component
 import './assets/css/style.scss';
+import ContactUs from './components/frontend/ContactUs';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/contact' element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
     </>
