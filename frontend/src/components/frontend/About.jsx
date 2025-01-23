@@ -31,7 +31,7 @@ const About = () => {
               <span>Team</span>
               <h2>Our Team</h2>
               <p>
-                We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.
+                We offe a diverse array of construction services, spanning residential, commercial, and industrial projects.
               </p>
             </div>
             <div className='row pt-3'>
