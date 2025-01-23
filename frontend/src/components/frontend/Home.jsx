@@ -1,9 +1,9 @@
-import React from 'react'
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import AboutImg from '../../assets/images/about-us.jpg';
+import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import { default as AboutNew } from '../common/About';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import ServiceImg from '../../assets/images/construction1.jpg';
 import ConstructionImg from '../../assets/images/construction2.jpg';
 import { Pagination } from 'swiper/modules';
@@ -15,9 +15,10 @@ import AvatarImg from '../../assets/images/author-2.jpg';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import BlogImg from '../../assets/images/construction3.jpg';
+import About from '../common/About';
+
 const Home = () => {
    return (
-
       <>
          <Header />
          <main>
@@ -33,34 +34,13 @@ const Home = () => {
                            <a className='btn btn-primary large'>Contact Now</a>
                            <a className='btn btn-secondary ms-2 large'>View Projects</a>
                         </div>
-
                      </div>
-
                   </div>
                </div>
             </section>
             {/* About Us Section */}
-            <section className='section-2 py-5'>
-               <div className='container py-5'>
-                  <div className='row pt-4'>
-                     <div className='col-md-6'>
-                        <img src={AboutImg} className='w-100' />
-                     </div>
-                     <div className='col-md-6'>
-                        <span>About Us</span>
-                        <h2>Crafting structures that last a lifetime</h2>
-                        <p>BuildCraft is an innovative solution designed to streamline
-                           construction project management, offering intuitive tools for
-                           planning, tracking, and collaboration.</p>
-                        <p>BuildCraft empowers construction teams with smart project management
-                           features, enabling better coordination, resource optimization, and
-                           real-time progress tracking to achieve project goals efficiently.
-
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </section>
+            <About />
+           
             {/*OUR SERVICES*/}
             <section className='section-3 bg-light py-5'>
                <div className='container-fluid py-5'>
