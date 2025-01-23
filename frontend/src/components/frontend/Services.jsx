@@ -12,7 +12,7 @@ const Services = () => {
       <Header />
       <Hero 
         preHeading="Quality. Integrity. Value" 
-        Heading="Services"
+        heading="Services"
         text="We excel at transforming visions into reality <br/> through outstanding craftsmanship & Precision."
       />
       <section className='section-3 bg-light py-5'>
