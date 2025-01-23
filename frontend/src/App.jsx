@@ -9,6 +9,8 @@ import About from './components/frontend/About';
 import Services from './components/frontend/Services'; // Importing the Services component
 import './assets/css/style.scss';
 import ContactUs from './components/frontend/ContactUs';
+import Projects from './components/frontend/Projects';
+import Blogs from './components/frontend/Blogs';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +23,9 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/blogs' element={<Blogs />} />
+          
         </Routes>
       </BrowserRouter>
     </>

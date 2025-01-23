@@ -238,6 +238,31 @@ footer {
     .card {
         border-radius: 40px;
     }
+    .card {
+        .card-body {
+            .rating {
+                color: $secondary-color;
+            }
+
+            .content {
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            .meta {
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                font-size: 1.3em;
+                font-weight: 500;
+
+            }
+        }
+    }
 }
 
 .section-6 {
@@ -248,6 +273,22 @@ footer {
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
         }
+        .card-body {
+            a.title {
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+
+    a{
+        text-decoration: none;
+        color:$text-color;
+        &:hover{
+            color:$primary-color;
+
+        
     }
 }
 
@@ -322,15 +363,6 @@ footer {
                 }
             }
         }
-    }
-}
-.section-9{
-    .card {
-        border-radius: 40px;
-        .card-body{
-           
-            }
-       
     }
 }
 

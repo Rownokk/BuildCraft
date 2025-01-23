@@ -6,8 +6,9 @@ const Hero = ({ preHeading, heading, text }) => {
       <div className='hero d-flex align-items-center'>
         <div className='container'>
           <div className='text-left'>
-            <span>{preHeading}</span>
+          
             <h1>{heading}</h1> {/* Use lowercase 'heading' here */}
+            <span>{preHeading}</span>
             <p dangerouslySetInnerHTML={{ __html: text }}></p>
           </div>
         </div>
@@ -17,5 +18,8 @@ const Hero = ({ preHeading, heading, text }) => {
 }
 
 export default Hero;
+
+
+
 
 
