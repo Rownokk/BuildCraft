@@ -1,4 +1,4 @@
-//Global Colors
+// Global Colors
 $primary-color: #fe538d;
 $secondary-color: #FFB703;
 $text-color: #000;
@@ -40,17 +40,18 @@ ul {
 .bg-light {
     background-color: $light-background;
 }
-.small{
+
+.small {
     padding: 10px 15px;
 }
-.large{
 
+.large {
     padding: 15px 20px;
 }
+
 .btn-primary {
     background-color: $primary-color;
     border: 1px solid $primary-color;
-   
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -64,7 +65,6 @@ ul {
 .btn-secondary {
     background-color: $secondary-color;
     border: 1px solid $secondary-color;
-
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -77,17 +77,14 @@ ul {
 
 .section-header {
     span {
-        color: $primary-color ;
+        color: $primary-color;
         font-size: 1.2em;
-
         padding-bottom: 10px;
         display: block;
         text-transform: uppercase;
         font-weight: 500;
     }
-
 }
-
 
 header {
     nav {
@@ -97,9 +94,9 @@ header {
             color: $text-color;
             font-weight: 500;
             margin-left: 20px;
-            &:hover{
-                color:$primary-color;
-    
+
+            &:hover {
+                color: $primary-color;
             }
         }
 
@@ -139,7 +136,6 @@ footer {
 
 .section-1 {
     .hero {
-
         min-height: 800px;
         color: $text-white;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
@@ -164,7 +160,6 @@ footer {
         display: block;
         font-weight: 500;
         padding-bottom: 10px;
-
     }
 }
 
@@ -204,8 +199,7 @@ footer {
                 bottom: 0;
                 right: 0;
                 border-radius: 40px;
-                background: linear-gradient(180deg, rgba (217, 217, 217, 0) 0%, rgba(217, 217, 217, 0) 13.02%, rgba(0, 0, 0, 0.51)42.5%, rgba(0, 0, 0, 0.63)70%, #000000 100%);
-
+                background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0) 13.02%, rgba(0, 0, 0, 0.51) 42.5%, rgba(0, 0, 0, 0.63) 70%, #000000 100%);
             }
         }
 
@@ -220,7 +214,6 @@ footer {
             .service-content {
                 transition: all 0.4s ease-in-out;
                 opacity: 0;
-
             }
         }
     }
@@ -234,42 +227,18 @@ footer {
 }
 
 .section-5 {
-    .swiper{
-        padding:25px 25px 50px 25px;
-        .swiper-pagination-bullet-active{
+    .swiper {
+        padding: 25px 25px 50px 25px;
+
+        .swiper-pagination-bullet-active {
             background-color: $secondary-color;
         }
+    }
 
-    }.card{
+    .card {
         border-radius: 40px;
     }
-    .card {
-        .card-body {
-            .rating {
-                color: $secondary-color;
-            }
-
-            .content {
-                p {
-                    font-size: 1em;
-                }
-            }
-
-            .meta {
-                img {
-                    border-radius: 50%;
-                }
-            }
-
-            .name {
-                font-size: 1.3em;
-                font-weight: 500;
-
-            }
-        }
-    }
 }
-
 
 .section-6 {
     .card {
@@ -279,21 +248,13 @@ footer {
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
         }
-
-        .card-body {
-            a.title {
-                font-size: 1.4em;
-            }
-        }
     }
 }
 
-
-    a{
-        text-decoration: none;
-        color:$text-color;
-        &:hover{
-            color:$primary-color;
-
-        }
+.section-7 {
+    .hero {
+        min-height: 500px;
+        color: $text-white;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
     }
+}
