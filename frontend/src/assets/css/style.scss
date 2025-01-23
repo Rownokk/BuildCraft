@@ -258,3 +258,20 @@ footer {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
     }
 }
+.section-8{
+    .card {
+        border-radius: 40px;
+
+        img {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+        .card-body{
+            a.title{
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+
