@@ -31,7 +31,7 @@ const About = () => {
           <div className='container'>
             <div className='section-header text-center'>
               <span>Team</span>
-              <h2>Our Team</h2>
+              <h2>Meet Our Team</h2>
               <p>
                 We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.
               </p>
