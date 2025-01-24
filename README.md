@@ -126,7 +126,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
 ## **Project Features** ✨ <a id="project-features"></a>
 
 ### **User Section** 👥 <a id="user-section"></a>
-- 🔐 Secure multi-role login (Admin, Project Manager, Client).  
+- 🔐 Secure  login (Admin).  
 - 📊 Role-based access control for data and actions.  
 - 🛠️ CRUD operations for project-related data (e.g., schedules, resources, tasks).  
 - 🔍 Search and filter functionality for records.  
@@ -134,8 +134,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
 ### **Admin Section** 🛡️ <a id="admin-section"></a>
 - 👥 Manage user roles and permissions.  
 - ✅ Approve or reject new project requests.  
-- 📑 Generate reports for project progress and resource usage.  
-- 🔒 Multi-admin authentication and password recovery.  
+- 📑 Generate reports for project progress and resource usage.    
 
 ### **Project Manager Section** 🏗️ <a id="project-manager-section"></a>
 - ✅ Assign and monitor tasks for team members.  
@@ -189,8 +188,8 @@ The primary objective of BuildCraft is to provide an integrated platform that:
       <td>
         <ul>
           <li>Frontend and backend setup.</li>
-          <li>User authentication system.</li>
-          <li>Database design for project and user data.</li>
+          <li>Implement basic frontend components in React</li>
+          <li>Design the frontend based on the provided canva</li>
         </ul>
       </td>
     </tr>
@@ -198,6 +197,7 @@ The primary objective of BuildCraft is to provide an integrated platform that:
       <td>Checkpoint 2</td>
       <td>
         <ul>
+           <li>Admin Authentication</li>
           <li>Project and task management features.</li>
           <li>Progress tracking dashboards.</li>
         </ul>
