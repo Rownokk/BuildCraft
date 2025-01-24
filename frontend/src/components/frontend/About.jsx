@@ -29,7 +29,7 @@ const About = () => {
               We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.
               </p>
             </div>
-            <div className='row pt-3'>
+            <div className='row justify-content-center pt-3'>
               {/* Team Member 1 */}
               <div className='col-md-6 col-lg-3 mb-3'>
                 <div className='card shadow border-0'>
