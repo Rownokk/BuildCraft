@@ -87,6 +87,7 @@ const About = () => {
       </main>
       <Footer />
     </>
+    
   );
 };
 
