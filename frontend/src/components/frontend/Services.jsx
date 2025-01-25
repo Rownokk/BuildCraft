@@ -54,7 +54,7 @@ const Services = () => {
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
-                    <h3>Residential Construction</h3>
+                    <h3>Civil Construction</h3>
                     <div className='service-contain'>
                       <p>
                         We build homes that prioritize comfort, sustainability, and modern aesthetics.
