@@ -4,6 +4,16 @@ import Footer from '../common/Footer';
 import Hero from '../common/Hero';
 import ServiceImg from '../../assets/images/construction1.jpg';
 
+import ConstImg1 from '../../assets/images/construction3.jpg';
+import ConstImg2 from '../../assets/images/construction4 (2).jpg';
+import ConstImg3 from '../../assets/images/construction4.jpg';
+import ConstImg4 from '../../assets/images/construction11.jpg'
+import ConstImg5 from'../../assets/images/construction9.jpg';
+import ConstImg6 from'../../assets/images/construction7.jpg';
+import ConstImg7 from'../../assets/images/construction8.jpg';
+import ConstImg8 from'../../assets/images/construction122.jpg';
+import ConstImg9 from'../../assets/images/construction1212.jpg';
+import ConstImg10 from'../../assets/images/construction12121.jpg';
 
 
 const Services = () => {
@@ -30,7 +40,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg10 } alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
@@ -50,7 +60,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg3} alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
@@ -70,7 +80,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg4} alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
@@ -90,7 +100,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg9} alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
@@ -110,7 +120,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg2} alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
@@ -130,7 +140,7 @@ const Services = () => {
             <div className='col-md-4 col-lg-4 '>
               <div className='item shadow border-0'>
                 <div className='service-image'>
-                  <img src={ServiceImg} alt="Service" className='w-100' />
+                  <img src={ConstImg1} alt="Service" className='w-100' />
                 </div>
                 <div className='service-body p-4'>
                   <div className='service-title'>
