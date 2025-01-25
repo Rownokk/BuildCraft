@@ -25,7 +25,9 @@ import ConstImg4 from '../../assets/images/construction11.jpg'
 import ConstImg5 from'../../assets/images/construction9.jpg';
 import ConstImg6 from'../../assets/images/construction7.jpg';
 import ConstImg7 from'../../assets/images/construction8.jpg';
-import ConstImg8 from'../../assets/images/construction10.jpg';
+import ConstImg8 from'../../assets/images/download.jpg';
+import ConstImg9 from '../../assets/images/download (1).jpg';
+
 
 
 const Home = () => {
@@ -365,7 +367,7 @@ const Home = () => {
                                  </svg>
                               </div>
                               <div className='content pt-4 pb-2'>
-                                 <p>    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                 <p>    "Exceptional service and top-notch craftsmanship. They took care of everything, ensuring a hassle-free experience. Highly recommend for any construction project!"
                                  </p>
                               </div>
                               <hr />
@@ -377,7 +379,7 @@ const Home = () => {
                                     <div className='name'>
                                        John Doe
                                     </div>
-                                    <div>CEO</div>
+                                    <div>Project Coordinator</div>
                                  </div>
                               </div>
                            </div>
@@ -405,19 +407,19 @@ const Home = () => {
                                  </svg>
                               </div>
                               <div className='content pt-4 pb-2'>
-                                 <p>    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                 <p>   "Reliable, efficient, and highly skilled! The construction of our commercial building was handled with precision, meeting all deadlines without compromising on quality."
                                  </p>
                               </div>
                               <hr />
                               <div className='d-flex meta'>
                                  <div>
-                                    <img src={AvatarImg} alt="" width={50} />
+                                    <img src={ConstImg8} alt="" width={50} />
                                  </div>
                                  <div className='ps-3'>
                                     <div className='name'>
-                                       John Doe
+                                       David L.
                                     </div>
-                                    <div>CEO</div>
+                                    <div>Manager</div>
                                  </div>
                               </div>
                            </div>
@@ -446,17 +448,17 @@ const Home = () => {
                                  </svg>
                               </div>
                               <div className='content pt-4 pb-2'>
-                                 <p>    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                 <p>    "The team exceeded my expectations with their attention to detail and professionalism. My home renovation was completed flawlessly, and the quality of work is outstanding!"
                                  </p>
                               </div>
                               <hr />
                               <div className='d-flex meta'>
                                  <div>
-                                    <img src={AvatarImg} alt="" width={50} />
+                                    <img src={ConstImg9} alt="" width={50} />
                                  </div>
                                  <div className='ps-3'>
                                     <div className='name'>
-                                       John Doe
+                                      Anika Haque
                                     </div>
                                     <div>CEO</div>
                                  </div>
