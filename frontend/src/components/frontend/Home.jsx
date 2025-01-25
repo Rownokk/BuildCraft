@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ServiceImg from '../../assets/images/construction1.jpg';
 import ConstructionImg from '../../assets/images/construction2.jpg';
+import ServiceImg1 from '../../assets/images/construction6.jpg';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Icon1 from '../../assets/images/icon-1.svg';
@@ -16,6 +17,16 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import BlogImg from '../../assets/images/construction3.jpg';
 import About from '../common/About';
+import ServiceImg2 from '../../assets/images/engineer-4925140_1280.jpg';
+import ConstImg1 from '../../assets/images/construction3.jpg';
+import ConstImg2 from '../../assets/images/construction4 (2).jpg';
+import ConstImg3 from '../../assets/images/construction4.jpg';
+import ConstImg4 from '../../assets/images/construction11.jpg'
+import ConstImg5 from'../../assets/images/construction9.jpg';
+import ConstImg6 from'../../assets/images/construction7.jpg';
+import ConstImg7 from'../../assets/images/construction8.jpg';
+import ConstImg8 from'../../assets/images/construction10.jpg';
+
 
 const Home = () => {
    return (
@@ -40,7 +51,7 @@ const Home = () => {
             </section>
             {/* About Us Section */}
             <About />
-           
+
             {/*OUR SERVICES*/}
             <section className='section-3 bg-light py-5'>
                <div className='container-fluid py-5'>
@@ -55,7 +66,7 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ServiceImg} alt="" className='w-100' />
+                              <img src={ConstImg1} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
@@ -81,11 +92,10 @@ const Home = () => {
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Speciality Construction</h3>
+                                 <h3>Civil Construction</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    Handling large-scale infrastructure projects like roads, bridges, and public facilities, ensuring safety, sustainability, and compliance with engineering standards.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -99,15 +109,14 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ServiceImg} alt="" className='w-100' />
+                              <img src={ServiceImg2} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Speciality Construction</h3>
+                                 <h3>Residential Construction</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                       Focused on building and renovating homes, ensuring comfort, durability, and modern design with efficient project management and resource planning.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -121,15 +130,14 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ServiceImg} alt="" className='w-100' />
+                              <img src={ServiceImg1} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Speciality Construction</h3>
+                                 <h3>Corporate Construction</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    Developing office spaces, commercial buildings, and business hubs with innovative designs, optimized layouts, and advanced infrastructure to enhance productivity.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -183,14 +191,14 @@ const Home = () => {
                            </div>
                            <div className='card-title mt-3'>
                               <h3>
-                                 Cutting_Edge Solutions
+                              Knowledge and Expertise
                               </h3>
 
                            </div>
 
 
                            <p>
-                              Smallactions create big impacts.It all begings and ends with each employee committing to safer work practices daily , ensuring they return home safely.
+                           With a strong foundation in construction principles, we bring years of experience and technical proficiency to every project for planning to execution.
                            </p>
 
                         </div>
@@ -203,14 +211,19 @@ const Home = () => {
                            </div>
                            <div className='card-title mt-3'>
                               <h3>
-                                 Cutting_Edge Solutions
+                              Superior Craftsmanship
                               </h3>
 
                            </div>
 
 
                            <p>
-                              Smallactions create big impacts.It all begings and ends with each employee committing to safer work practices daily , ensuring they return home safely.
+                           We are committed to excellence, delivering structures with precision and durability. Our attention to detail, use of high-quality materials, and skilled workmanship.
+
+
+
+
+
                            </p>
 
                         </div>
@@ -231,15 +244,15 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ConstructionImg} alt="" className='w-100' />
+                              <img src={ConstImg2} alt="" className='w-100' />
+                              
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Kolkata Project</h3>
+                                 <h3>Bashundhara Project</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    A modern construction initiative in one of the most vibrant commercial and residential areas, designed for luxury, convenience, and business growth, integrating contemporary architecture with premium facilities.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -253,15 +266,14 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ConstructionImg} alt="" className='w-100' />
+                              <img src={ConstImg3} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>   Kolkata Project</h3>
+                                 <h3>   Baridhara Project</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    A rapidly developing residential hub offering well-planned infrastructure, modern amenities, and a comfortable living experience, catering to families and professionals seeking a peaceful yet connected lifestyle.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -275,15 +287,14 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ConstructionImg} alt="" className='w-100' />
+                              <img src={ConstImg4} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Kolkata Project</h3>
+                                 <h3>Uttara Project</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    A visionary development featuring expansive residential and commercial spaces, emphasizing sustainability, green living, and future-ready infrastructure, making it one of the most sought-after locations.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -297,15 +308,14 @@ const Home = () => {
                         <div className='item'>
                            <div className='service-image'>
 
-                              <img src={ConstructionImg} alt="" className='w-100' />
+                              <img src={ConstImg5} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
-                                 <h3>Kolkata Project</h3>
+                                 <h3>Banani Project</h3>
                                  <div className='service-contain'>
                                     <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
+                                    An exclusive, high-end residential and diplomatic area with premium homes and elite facilities, ensuring privacy, security, and an upscale living environment in a prestigious neighborhood.
                                     </p>
                                  </div>
                                  <a href='#' className='btn btn-primary small'>Read More</a>
@@ -473,12 +483,12 @@ const Home = () => {
                      <div className='col-md-4'>
                         <div className='card shadow border-0'>
                            <div className='card-img-top'>
-                              <img src={BlogImg} alt="" className='w-100' />
+                              <img src={ConstImg6} alt="" className='w-100' />
                            </div>
                            <div className='card-body p-4'>
-                             
+
                               <div className='mb-3'>
-                            <a href='#' className='title'>Dummy blog title</a>
+                                 <a href='#' className='title'>Building the Future</a>
                               </div>
                               <a href='#' className='btn btn-primary small'>Read More</a>
                            </div>
@@ -488,12 +498,12 @@ const Home = () => {
                      </div>     <div className='col-md-4'>
                         <div className='card shadow border-0'>
                            <div className='card-img-top'>
-                              <img src={BlogImg} alt="" className='w-100' />
+                              <img src={ConstImg5} alt="" className='w-100' />
                            </div>
                            <div className='card-body p-4'>
-                             
+
                               <div className='mb-3'>
-                            <a href='#' className='title'>Dummy blog title</a>
+                                 <a href='#' className='title'>From Blueprint to Reality</a>
                               </div>
                               <a href='#' className='btn btn-primary small'>Read More</a>
                            </div>
@@ -504,12 +514,12 @@ const Home = () => {
                      <div className='col-md-4'>
                         <div className='card shadow border-0'>
                            <div className='card-img-top'>
-                              <img src={BlogImg} alt="" className='w-100' />
+                              <img src={ConstImg7} alt="" className='w-100' />
                            </div>
                            <div className='card-body p-4'>
-                             
+
                               <div className='mb-3'>
-                            <a href='#' className='title'>Dummy blog title</a>
+                                 <a href='#' className='title'>Sustainable Structures</a>
                               </div>
                               <a href='#' className='btn btn-primary small'>Read More</a>
                            </div>
