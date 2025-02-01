@@ -70,7 +70,7 @@ const ContactUs = () => {
                         <textarea id="message" rows="5" className="form-control form-control-lg" placeholder="Write your message here..." required></textarea>
                       </div>
                       <div className="text-center">
-                        <button  type="submit" className="btn btn-primary large mt-3">Submit Message</button>
+                        <button  type="submit" className="btn btn-primary large mt-3">Submit</button>
                       </div>
                     </form>
                   </div>
