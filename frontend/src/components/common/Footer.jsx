@@ -132,14 +132,14 @@ const Footer = () => {
             justify-content: center;
             font-size: 24px;
             cursor: pointer;
-            box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.4);
+            box-shadow: 0px 4px 10px rgba(150, 30, 70, 1);
             transition: all 0.3s ease-in-out;
             opacity: 0.9;
           }
 
           .scroll-to-top:hover {
             transform: scale(1.1);
-            box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.6);
+            box-shadow: 0px 6px 15px rgba(180, 40, 90, 1);
             opacity: 1;
           }
         `}
