@@ -13,9 +13,13 @@ const About = () => {
             <span>About Us</span>
             <h2>Crafting structures that last a lifetime</h2>
             <p>
-              BuildCraft is an innovative solution designed to streamline
-              construction project management, offering intuitive tools for
-              planning, tracking, and collaboration.
+            At BuildCraft, we stand as artisans of construction, bringing forth the finest blend 
+            of tradition and innovation. Our legacy is built on an unwavering commitment to creating 
+            enduring structures that transcend time. Every project we undertake is a testament to our 
+            meticulous attention to detail, excellence in execution, and passion for delivering 
+            spaces that leave a lasting impact.
+
+
             </p>
             <p>
               BuildCraft empowers construction teams with smart project
