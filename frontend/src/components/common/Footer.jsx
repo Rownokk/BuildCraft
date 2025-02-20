@@ -77,7 +77,7 @@ const Footer = () => {
               <li className="mb-2">
                 <FaPhoneAlt className="me-2 text-primary" />
                 <a href="tel:+188800000000" className="text-light text-decoration-none">
-                  (888) 000-00000
+                  (888) 0123-7645
                 </a>
               </li>
               <li className="mb-2">
