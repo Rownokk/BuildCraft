@@ -94,9 +94,72 @@ class MemberController extends Controller
 
     }
     //this method will update a single member data
-    public function update() {
+    public function update($id, Request $request) {
 
-    }
+        $member = Member::find($id);
+
+        if($member== null) {
+            return response()->json([
+                'status' => false,
+                'message' => "Member not added"
+              ]);
+        }
+
+        $validator = Validator::make($request->all(),[
+            'name' => 'required',
+            'job_title' => 'required',
+          ]);
+          if($validator->fails()){
+            return response()->json([
+              'status' => false,
+              'errors' => $validator->errors()
+            ]);
+          }
+          
+          $member->name = $request->name;
+          $member->job_title = $request->job_title;
+          $member->linkedin_url = $request->linkedin_url;
+          $member->status = $request->status;
+          $member->save();
+    
+          if($request->imageId > 0){
+            $oldImage = $member ->image;
+        $tempImage = TempImage::find($request->imageId);
+            if($tempImage !=null){
+        
+        
+        $extArray = explode('.',$tempImage->name);
+        $ext=last($extArray);
+        
+        $fileName =strtotime('now').$member->id.'.'.$ext;
+        
+        
+         //create small thumbnail here
+         $sourcePath = public_path('uploads/temp/'.$tempImage->name);
+         $destPath = public_path('uploads/members/'.$fileName);
+         
+         $manager = new ImageManager(new \Intervention\Image\Drivers\Gd\Driver());
+    // Force GD driver
+    
+         $image = $manager->read($sourcePath);
+         $image->coverDown(400, 500);
+         $image->save($destPath);
+         $member->image= $fileName;
+         $member->save();
+        
+         if($oldImage != ''){
+            File::delete(public_path('uploads/members/'.$oldImage));
+        }
+        
+        }
+        }
+    
+          return response()->json([
+            'status' => true,
+            'message' => "Member Updated successfully"
+          ]);
+          
+        }
     //this method will delete a member
     public function destroy() {
 
