@@ -24,5 +24,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     //member routes
     Route::post('members',[MemberController::class,'store']);
     Route::get('members',[MemberController::class,'index']);
+    Route::get('members/{id}',[MemberController::class,'show']);
+
 
 });
