@@ -161,7 +161,23 @@ class MemberController extends Controller
           
         }
     //this method will delete a member
-    public function destroy() {
+    public function destroy($id) {
+        $member = Member::find($id);
 
+        if($member== null) {
+            return response()->json([
+                'status' => false,
+                'message' => "Member not found"
+              ]);
+        }
+        if($member->image != ''){
+            File::delete(public_path('uploads/members/'.$member->image));
+        }
+        
+        $member->delete();
+        return response()->json([
+            'status' => true,
+            'message' => "Member deleted"
+          ]);
     }
 }

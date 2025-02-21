@@ -26,6 +26,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('members',[MemberController::class,'index']);
     Route::get('members/{id}',[MemberController::class,'show']);
     Route::put('members/{id}',[MemberController::class,'update']);
+    Route::delete('members/{id}',[MemberController::class,'destroy']);
 
 
 });
