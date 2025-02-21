@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\TempImageController;
+use App\Http\Controllers\admin\MemberController;
 
 Route::post('authenticate', [AuthenticationController::class, 'authenticate']);
 
@@ -19,4 +20,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('services/{id}', [ServiceController::class, 'destroy']);
 
     Route::post('temp-image', [TempImageController::class, 'store']);
+    
+    //member routes
+    Route::post('members',[MemberController::class,'store']);
 });
