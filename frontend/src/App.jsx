@@ -17,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './components/backend/Dashboard';
 import RequireAuth from './components/common/RequireAuth';
 import {default as ShowServices} from './components/backend/services/Show';
-
+import {default as ShowMembers} from './components/backend/members/Show';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -42,6 +42,12 @@ function App() {
              <Route path='/admin/services' element={
             <RequireAuth>
             <ShowServices/>
+            </RequireAuth>
+            
+            } />
+            <Route path='/admin/members' element={
+            <RequireAuth>
+            <ShowMembers/>
             </RequireAuth>
             
             } />
