@@ -19,6 +19,7 @@ import RequireAuth from './components/common/RequireAuth';
 import {default as ShowServices} from './components/backend/services/Show';
 import {default as ShowMembers} from './components/backend/members/Show';
 import { default as CreateService } from "./components/backend/services/Create";
+import { default as EditService } from "./components/backend/services/Edit";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -58,6 +59,11 @@ function App() {
             </RequireAuth>
             
             } />
+             <Route path='/admin/services/edit/:id' element={
+            <RequireAuth>
+            <EditService/>
+            </RequireAuth>
+   } />
         </Routes>
       </BrowserRouter>
       <ToastContainer 
