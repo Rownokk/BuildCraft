@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { default as AboutNew } from '../common/About';
@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ServiceImg from '../../assets/images/construction1.jpg';
 import ConstructionImg from '../../assets/images/construction2.jpg';
-import ServiceImg1 from '../../assets/images/construction6.jpg';
+
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Icon1 from '../../assets/images/icon-1.svg';
@@ -27,10 +27,15 @@ import ConstImg6 from'../../assets/images/construction7.jpg';
 import ConstImg7 from'../../assets/images/construction8.jpg';
 import ConstImg8 from'../../assets/images/download.jpg';
 import ConstImg9 from '../../assets/images/download (1).jpg';
+import { apiUrl, token } from '../common/http';
+import { set } from 'react-hook-form';
+import LatestServices from '../common/LatestServices';
 
 
 
 const Home = () => {
+  
+
    return (
       <>
          <Header />
@@ -55,104 +60,9 @@ const Home = () => {
             <About />
 
             {/*OUR SERVICES*/}
-            <section className='section-3 bg-light py-5'>
-               <div className='container-fluid py-5'>
-                  <div className='section-header text-center'>
-                     <span>our services</span>
-                     <h2>our construction services</h2>
-                     <p>We build homes that reflect your style and needs, combining modern designs with durable construction techniques. </p>
-                  </div>
-                  <div className='row'>
-
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ConstImg1} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Speciality Construction</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                       We build homes that reflect your style and needs, combining modern designs with durable construction techniques.
-                                       From custom homes to renovations and remodels, we bring your dream home to reality.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ServiceImg} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Civil Construction</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    Handling large-scale infrastructure projects like roads, bridges, and public facilities, ensuring safety, sustainability, and compliance with engineering standards.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ServiceImg2} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Residential Construction</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                       Focused on building and renovating homes, ensuring comfort, durability, and modern design with efficient project management and resource planning.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ServiceImg1} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Corporate Construction</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    Developing office spaces, commercial buildings, and business hubs with innovative designs, optimized layouts, and advanced infrastructure to enhance productivity.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                  </div>
-               </div>
-               {/*OUR PROJECTS*/}
-            </section>
+           <LatestServices/>
+              
+         
             {/*why choose us*/}
             <section className='section-4 py-5'>
                <div className='container py-5'>
