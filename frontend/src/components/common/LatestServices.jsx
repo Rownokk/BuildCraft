@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ServiceImg from '../../assets/images/construction1.jpg';
-import { apiUrl } from './http';
+import { apiUrl, fileUrl } from './http';
 
 const LatestServices =() =>{
     const[services,setServices] =useState([]);
@@ -37,7 +37,7 @@ const LatestServices =() =>{
                         <div className='item'>
                            <div className='service-image'>
        
-                              <img src={ServiceImg} alt="" className='w-100' />
+                              <img src={`${fileUrl}uploads/services/small/${service.image}`} alt="" className='w-100' />
                            </div>
                            <div className='service-body'>
                               <div className='service-title'>
