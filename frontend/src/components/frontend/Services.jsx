@@ -55,7 +55,7 @@ const Services = () => {
 
                 services && services.map(service =>{
                    return (
-                    <div className="col-md-3 col-lg-3" key={service.id || `service-${index}`}>
+                    <div className="col-md-4 col-lg-4" key={service.id || `service-${index}`}>
                         <div className='item'>
                            <div className='service-image'>
        
