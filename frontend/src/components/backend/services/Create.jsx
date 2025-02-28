@@ -13,6 +13,7 @@ const Create = ({ placeholder }) => {
   const [content, setContent] = useState('');
   const [isDisable, setIsDisable] = useState(false);
   const [imageId, setImageId] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null); // Added state for image preview
 
   const config = useMemo(
     () => ({
@@ -56,6 +57,10 @@ const Create = ({ placeholder }) => {
     const formData = new FormData();
     const file = e.target.files[0];
     formData.append('image', file);
+
+    // Generate preview URL
+    const previewUrl = URL.createObjectURL(file); 
+    setImagePreview(previewUrl); // Set preview URL for the image
 
     await fetch(apiUrl + 'temp-image', {
       method: 'POST',
@@ -151,6 +156,21 @@ const Create = ({ placeholder }) => {
                       <br />
                       <input onChange={handleFile} type="file" />
                     </div>
+
+                    {/* Display Image Preview */}
+                    {imagePreview && (
+                      <div className="mb-3">
+                        <label className="form-label">Image Preview</label>
+                        <div>
+                          <img
+                            src={imagePreview}
+                            alt="Preview"
+                            className="img-fluid"
+                            style={{ maxWidth: '200px', height: 'auto' }}
+                          />
+                        </div>
+                      </div>
+                    )}
 
                     {/* Status Field */}
                     <div className="mb-3">
