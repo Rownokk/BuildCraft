@@ -29,35 +29,32 @@ const LatestServices =() =>{
               <p>We build homes that reflect your style and needs, combining modern designs with durable construction techniques. </p>
            </div>
            <div className='row pt-4'>
-            {
-
-                services && services.map(service =>{
-                   return (
-                        <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-       
-                              <img src={`${fileUrl}uploads/services/small/${service.image}`} alt="" className='w-100' />
+            
+{
+   services && services.map((service, index) => {
+      return (
+           <div key={service.id || index} className='col-md-3 col-lg-3'>
+               <div className='item'>
+                   <div className='service-image'>
+                       <img src={`${fileUrl}uploads/services/small/${service.image}`} alt="" className='w-100' />
+                   </div>
+                   <div className='service-body'>
+                       <div className='service-title'>
+                           <h3>{service.title}</h3>
+                           <div className='service-content'>
+                               <p>
+                                {service.short_desc}
+                               </p>
                            </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>{service.title}</h3>
-                                 <div className='service-content'>
-                                    <p>
-                                     {services.short_desc}
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary'>Read More</a>
-                              </div>
-       
-                           </div>
-                        </div>
-       
-                     </div>
-                    )
-                })
+                           <a href='#' className='btn btn-primary'>Read More</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       );
+   })
+}
 
-            }
 
              
            </div>

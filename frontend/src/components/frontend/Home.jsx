@@ -4,7 +4,7 @@ import Footer from '../common/Footer';
 import { default as AboutNew } from '../common/About';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import ServiceImg from '../../assets/images/construction1.jpg';
+
 import ConstructionImg from '../../assets/images/construction2.jpg';
 
 import { Pagination } from 'swiper/modules';
@@ -34,7 +34,7 @@ import LatestServices from '../common/LatestServices';
 
 
 const Home = () => {
-  
+
 
    return (
       <>
