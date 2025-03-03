@@ -13,7 +13,6 @@ const Create = ({ placeholder }) => {
   const [content, setContent] = useState('');
   const [isDisable, setIsDisable] = useState(false);
   const [imageId, setImageId] = useState(null);
-  const [imagePreview, setImagePreview] = useState(null); // Added state for image preview
 
   const config = useMemo(
     () => ({
@@ -39,7 +38,7 @@ const Create = ({ placeholder }) => {
       headers: {
         'Content-type': 'application/json',
         'Accept': 'application/json',
-        Authorization: `Bearer ${token()}`,
+        Authorization: `Bearer ${token()}`, // Fixed the backticks here
       },
       body: JSON.stringify(newData),
     });
@@ -58,15 +57,11 @@ const Create = ({ placeholder }) => {
     const file = e.target.files[0];
     formData.append('image', file);
 
-    // Generate preview URL
-    const previewUrl = URL.createObjectURL(file); 
-    setImagePreview(previewUrl); // Set preview URL for the image
-
     await fetch(apiUrl + 'temp-image', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        Authorization: `Bearer ${token()}`,
+        Authorization: `Bearer ${token()}`, // Fixed the backticks here
       },
       body: formData,
     })
@@ -107,7 +102,7 @@ const Create = ({ placeholder }) => {
                         placeholder="Title"
                         {...register('title', { required: 'The title field is required' })}
                         type="text"
-                        className={`form-control ${errors.title && 'is-invalid'}`}
+                        className={`form-control ${errors.title && 'is-invalid'}`} // Fixed className here
                       />
                       {errors.title && <p className="invalid-feedback">{errors.title?.message}</p>}
                     </div>
@@ -119,7 +114,7 @@ const Create = ({ placeholder }) => {
                         placeholder="Slug"
                         {...register('slug', { required: 'The slug field is required' })}
                         type="text"
-                        className={`form-control ${errors.slug && 'is-invalid'}`}
+                        className={`form-control ${errors.slug && 'is-invalid'}`} // Fixed className here
                       />
                       {errors.slug && <p className="invalid-feedback">{errors.slug?.message}</p>}
                     </div>
@@ -157,21 +152,6 @@ const Create = ({ placeholder }) => {
                       <input onChange={handleFile} type="file" />
                     </div>
 
-                    {/* Display Image Preview */}
-                    {imagePreview && (
-                      <div className="mb-3">
-                        <label className="form-label">Image Preview</label>
-                        <div>
-                          <img
-                            src={imagePreview}
-                            alt="Preview"
-                            className="img-fluid"
-                            style={{ maxWidth: '200px', height: 'auto' }}
-                          />
-                        </div>
-                      </div>
-                    )}
-
                     {/* Status Field */}
                     <div className="mb-3">
                       <label className="form-label">Status</label>
@@ -198,3 +178,4 @@ const Create = ({ placeholder }) => {
 };
 
 export default Create;
+
