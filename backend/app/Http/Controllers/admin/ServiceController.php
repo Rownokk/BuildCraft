@@ -36,6 +36,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+        $request->merge(['slug' => Str::slug($request->slug)]); 
         $validator =Validator::make($request->all(), [ 
            
             'title' => 'required', 
@@ -150,6 +151,7 @@ if($service== null){
         'message' => 'Service not found '
             ]);
 }
+$request->merge(['slug' => Str::slug($request->slug)]); 
 
         $validator =Validator::make($request->all(), [ 
            
