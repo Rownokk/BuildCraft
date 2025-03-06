@@ -8,10 +8,12 @@ use App\Http\Controllers\admin\ProjectController;
 use App\Http\Controllers\admin\TempImageController;
 use App\Http\Controllers\admin\MemberController;
 use App\Http\Controllers\front\ServiceController as FrontServiceController;
+use App\Http\Controllers\admin\MemberController as FrontMemberController;
 
 Route::post('authenticate', [AuthenticationController::class, 'authenticate']);
 Route::get('get-services', [FrontServiceController    ::class, 'index']);
 Route::get('get-latest-services', [FrontServiceController    ::class, 'latestServices']);
+Route::get('get-members', [FrontMemberController    ::class, 'index']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
