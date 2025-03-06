@@ -69,7 +69,7 @@ const Show = () => {
                           <td>{member.job_title}</td>
                           <td>{member.status === 1 ? 'Active' : 'Blocked'}</td>
                           <td>
-                            <Link to={`/admin/services/edit/${member.id}`} className="btn btn-primary btn-sm">Edit</Link>
+                            <Link to={`/admin/members/edit/${member.id}`} className="btn btn-primary btn-sm">Edit</Link>
                             <a href="#" className="btn btn-secondary btn-sm ms-2">Delete</a>
                           </td>
                         </tr>
