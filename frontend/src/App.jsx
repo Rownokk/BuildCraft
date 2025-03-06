@@ -19,6 +19,7 @@ import RequireAuth from './components/common/RequireAuth';
 import {default as ShowServices} from './components/backend/services/Show';
 import {default as ShowMembers} from './components/backend/members/Show';
 import {default as CreateMember} from './components/backend/members/Create';
+import {default as EditMember} from './components/backend/members/Edit';
 
 import { default as CreateService } from "./components/backend/services/Create";
 import { default as EditService } from "./components/backend/services/Edit";
@@ -59,6 +60,13 @@ function App() {
             <Route path='/admin/members/create' element={
             <RequireAuth>
             <CreateMember/>
+            </RequireAuth>
+            
+            } />
+
+           <Route path='/admin/members/edit/:id' element={
+            <RequireAuth>
+            <EditMember/>
             </RequireAuth>
             
             } />

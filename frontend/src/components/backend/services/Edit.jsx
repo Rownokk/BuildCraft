@@ -34,7 +34,8 @@ const Edit = ({ placeholder }) => {
           'Accept': 'application/json',
           'Authorization': `Bearer ${token()}`
         }
-      });
+      }
+    );
       const result = await res.json();
       setService(result.data);
       setContent(result.data.content);
