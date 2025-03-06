@@ -47,7 +47,7 @@ const Show = () => {
                 <div className="card-body p-4">
                   <div className="d-flex justify-content-between">
                     <h4 className="h5">Members</h4>
-                    <Link to="/admin/services/create" className="btn btn-primary">Create</Link>
+                    <Link to="/admin/members/create" className="btn btn-primary">Create</Link>
                   </div>
                   <hr />
                   <table className="table table-striped">
