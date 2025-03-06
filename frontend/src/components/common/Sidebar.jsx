@@ -11,6 +11,8 @@ const Sidebar = () => {
                 <ul>
                     <li><Link to='/admin/dashboard'>Dashboard</Link></li>
                     <li><Link to='/admin/services'>Services</Link></li>
+                    <li><Link to='/admin/members'>Members</Link></li>
+
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Articles</a></li>
                     <li>
