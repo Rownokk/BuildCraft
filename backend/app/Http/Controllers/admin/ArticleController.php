@@ -15,8 +15,8 @@ class ArticleController extends Controller
 {
     public function index() {
         // Placeholder for index method (to be implemented)
+       $articles =Article::orderBy("created_at", 'DESC')->get() ;
 
-        
     }
 
     // This method will insert article in DB
