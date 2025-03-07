@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthenticationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\ArticleController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\ProjectController;
 use App\Http\Controllers\admin\TempImageController;
@@ -47,5 +48,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::put('members/{id}',[MemberController::class,'update']);
     Route::delete('members/{id}',[MemberController::class,'destroy']);
 
+    //article
+    Route::post('articles',[ArticleController::class,'store']);
 
 });
