@@ -27,6 +27,7 @@ import ServiceDetail from './components/frontend/ServiceDetail';
 import {default as ShowProjects} from './components/backend/projects/Show';
 import { default as EditProject } from "./components/backend/projects/Edit";
 import { default as CreateProject} from "./components/backend/projects/Create";
+import ProjectDetail from './components/frontend/ProjectDetail';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -39,6 +40,8 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/service/:id' element={<ServiceDetail />} />
+          <Route path='/project/:id' element={<ProjectDetail />} />
+
           <Route path='/projects' element={<Projects />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/admin/login' element={<Login/>} />
