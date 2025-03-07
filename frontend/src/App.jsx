@@ -84,6 +84,13 @@ function App() {
             <EditService/>
             </RequireAuth>
    } />
+
+
+<Route path='/admin/projects' element={
+            <RequireAuth>
+            <ShowProjects/>
+            </RequireAuth>
+   } />
         </Routes>
       </BrowserRouter>
       <ToastContainer 
