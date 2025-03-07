@@ -6,12 +6,15 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\ArticleController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\ProjectController;
+use App\Http\Controllers\admin\TestimonialController;
+
 use App\Http\Controllers\admin\TempImageController;
 use App\Http\Controllers\admin\MemberController;
 use App\Http\Controllers\front\ContactController;
 use App\Http\Controllers\front\ProjectController as FrontProjectController;
 use App\Http\Controllers\front\ServiceController as FrontServiceController;
 use App\Http\Controllers\admin\MemberController as FrontMemberController;
+use App\Http\Controllers\front\ArticleController as FrontArticleController;
 
 Route::post('authenticate', [AuthenticationController::class, 'authenticate']);
 Route::get('get-services', [FrontServiceController    ::class, 'index']);
@@ -23,6 +26,11 @@ Route::post('contact-now', [ContactController::class, 'index']);
 Route::get('get-projects', [FrontProjectController    ::class, 'index']);
 Route::get('get-latest-projects', [FrontProjectController    ::class, 'latestProjects']);
 Route::get('get-project/{id}', [FrontProjectController    ::class, 'project']);
+
+
+Route::get('get-articles', [FrontArticleController    ::class, 'index']);
+Route::get('get-latest-articles', [FrontArticleController::class, 'latestArticles']);
+
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
@@ -40,6 +48,9 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('projects/{id}', [ProjectController::class, 'show']);
     Route::delete('projects/{id}', [ProjectController::class, 'destroy']);
     Route::post('temp-image', [TempImageController::class, 'store']);
+
+    //Testimonial routes
+    Route::post('testimonials', [TestimonialController::class, 'store']);
     
     //member routes
     Route::post('members',[MemberController::class,'store']);
