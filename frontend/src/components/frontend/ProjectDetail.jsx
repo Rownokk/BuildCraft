@@ -41,7 +41,28 @@ const ProjectDetail = () => {
                             <aside className='col-md-4'>
                                 <div className='card shadow border-0 sidebar'>
                                     <div className='card-body'>
-                                        <h4 className='mb-3'>Our Projects</h4>
+                                        <h4 className='mb-3'>Insights</h4>
+                                        <ul>
+                                            {
+                                                project.location && <li className='mb-2'>
+                                                <span className='text-body-secondary'>Location</span>
+                                                <p>{project.location}</p>
+                                            </li>
+                                            }
+                                             {
+                                                project.construction_type && <li className='mb-2'>
+                                                <span className='text-body-secondary'>Construction Type</span>
+                                                <p>{project.construction_type}</p>
+                                            </li>
+                                            }
+                                            {
+                                                project.sector && <li className='mb-2'>
+                                                <span className='text-body-secondary'>Sector</span>
+                                                <p>{project.sector}</p>
+                                            </li>
+                                            }
+                                            
+                                        </ul>
                                         {/* <ul className='list-unstyled'>
                                             {services.map(svc => (
                                                 <li key={svc.id} className='mb-2'>
