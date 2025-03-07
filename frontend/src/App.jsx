@@ -24,6 +24,8 @@ import {default as EditMember} from './components/backend/members/Edit';
 import { default as CreateService } from "./components/backend/services/Create";
 import { default as EditService } from "./components/backend/services/Edit";
 import {default as ShowProjects} from './components/backend/projects/Show';
+
+import { default as CreateProject} from "./components/backend/projects/Create";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -87,6 +89,12 @@ function App() {
 <Route path='/admin/projects' element={
             <RequireAuth>
             <ShowProjects/>
+            </RequireAuth>
+   } />
+   
+<Route path='/admin/projects/create' element={
+            <RequireAuth>
+            <CreateProject/>
             </RequireAuth>
    } />
         </Routes>
