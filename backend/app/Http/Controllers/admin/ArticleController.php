@@ -21,6 +21,21 @@ class ArticleController extends Controller
         'errors' => $articles
     ]);
     }
+    public function show($id) {
+        // Placeholder for index method (to be implemented)
+       $article =Article::find($id) ;
+       if( $article==null)
+
+        {return response()->json([
+            'status' => true,
+            'message' => "Article not found"
+        ]);
+       }
+       return response()->json([
+        'status' => true,
+        'errors' => $article
+    ]);
+    }
 
     // This method will insert article in DB
     public function store(Request $request) {
