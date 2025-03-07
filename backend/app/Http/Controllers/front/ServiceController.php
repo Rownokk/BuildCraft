@@ -32,5 +32,21 @@ class ServiceController extends Controller
                         'data' => $services
                     ]);
                 }
+   //This method will return all single active services
+
+                public function service($id) {
+                    $service = Service::find($id);
+                    if($service== null){
+                        return response()->json([
+                            'status' => false,
+                            'data' => 'service not found'
+                        ]);
+                    }
+                
+                    return response()->json([
+                        'status' => true,
+                        'data' => $service
+                    ]);
+                }
 }
 
