@@ -240,7 +240,9 @@ return response()->json([
                 'message' => 'Service not found '
                     ]);
         }
-
+        File::delete(public_path('uploads/services/large/'.$services->image));
+        File::delete(public_path('uploads/services/small/'.$services->image)); 
+       
 $service->delete();
 
         return response()->json([
