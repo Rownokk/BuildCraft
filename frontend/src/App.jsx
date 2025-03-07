@@ -23,6 +23,7 @@ import {default as EditMember} from './components/backend/members/Edit';
 
 import { default as CreateService } from "./components/backend/services/Create";
 import { default as EditService } from "./components/backend/services/Edit";
+import ServiceDetail from './components/frontend/ServiceDetail';
 import {default as ShowProjects} from './components/backend/projects/Show';
 
 import { default as CreateProject} from "./components/backend/projects/Create";
@@ -37,9 +38,12 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/service/:id' element={<ServiceDetail />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/admin/login' element={<Login/>} />
+          <Route path='/admin/contact' element={<ContactUs/>} />
+
           <Route path='/admin/dashboard' element={
             <RequireAuth>
             <Dashboard/>
