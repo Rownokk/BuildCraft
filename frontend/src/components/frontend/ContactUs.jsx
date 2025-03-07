@@ -3,8 +3,39 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUser, FaRegEnvelope, FaPhone,
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Hero from '../common/Hero';
-
+import { useForm } from 'react-hook-form';
+import { apiUrl } from '../common/http';
+import { toast } from 'react-toastify';
 const ContactUs = () => {
+
+  const {
+          register,
+          handleSubmit,
+          watch,
+          reset,
+          formState: { errors },
+        } = useForm();
+
+  const onSubmit =async (data)=> {
+    
+    const res =await fetch(apiUrl+'contact-now',{
+      method : 'POST',
+      headers : {
+          'content-type' : 'application/json'
+      },
+      body : JSON.stringify(data)
+     });
+
+     const result = await res.json();
+     if(result.status == true){
+         toast.success(result.message);
+         reset();
+     }else {
+      toast.error(result.message);
+     }
+       
+  }
+
   return (
     <>
       <Header />
@@ -44,30 +75,68 @@ const ContactUs = () => {
                 <div className="card shadow-lg border-0">
                   <div className="card-body p-5">
                     <h3 className="fw-bold mb-4 text-center">Send Us a Message</h3>
-                    <form>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                       <div className="row">
                         <div className="col-md-6 mb-4">
                           <label htmlFor="name" className="form-label fw-bold"><FaUser className="me-2" />Name</label>
-                          <input type="text" id="name" className="form-control form-control-lg" placeholder="Enter your name" required />
+                          <input type="text" id="name" 
+                          {
+                            ...register('name',{
+                              required: "This name field is required"
+                            })
+                          }
+                          className={`form-control form-control-lg ${errors.name && `is-invalid`}`} placeholder="Enter your name" />
+                           {
+                            errors.name && <p className='invalid-feedback'>{errors.name?.message}</p>
+                          }
                         </div>
                         <div className="col-md-6 mb-4">
                           <label htmlFor="email" className="form-label fw-bold"><FaRegEnvelope className="me-2" />Email</label>
-                          <input type="email" id="email" className="form-control form-control-lg" placeholder="Enter your email" required />
+                          <input type="email" id="email" 
+                            {
+                              ...register('email', {
+                                  required: "The email field is required",
+
+
+                                  pattern: {
+                                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                      message: 'Please enter a valid email address'
+                                  }
+
+                              })
+                              }
+
+                          className={`form-control form-control-lg ${errors.email && `is-invalid`}`} placeholder="Enter your email" />
+                          {
+                            errors.email && <p className='invalid-feedback'>{errors.email?.message}</p>
+                          }
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-md-6 mb-4">
                           <label htmlFor="phone" className="form-label fw-bold"><FaPhone className="me-2" />Phone</label>
-                          <input type="tel" id="phone" className="form-control form-control-lg" placeholder="Your phone number" required />
+                          <input type="tel" id="phone" 
+                           {
+                            ...register('phone')
+                          }
+                          className="form-control form-control-lg" placeholder="Your phone number"  />
                         </div>
                         <div className="col-md-6 mb-4">
                           <label htmlFor="subject" className="form-label fw-bold"><FaPen className="me-2" />Subject</label>
-                          <input type="text" id="subject" className="form-control form-control-lg" placeholder="Subject of your message" required />
+                          <input type="text" id="subject" 
+                           {
+                            ...register('subject')
+                          }
+                          className="form-control form-control-lg" placeholder="Subject of your message"/>
                         </div>
                       </div>
                       <div className="mb-4">
                         <label htmlFor="message" className="form-label fw-bold"><FaPen className="me-2" />Message</label>
-                        <textarea id="message" rows="5" className="form-control form-control-lg" placeholder="Write your message here..." required></textarea>
+                        <textarea 
+                         {
+                          ...register('message')
+                        }
+                        className="form-control form-control-lg" placeholder="Write your message here..."></textarea>
                       </div>
                       <div className="text-center">
                         <button  type="submit" className="btn btn-primary large mt-3">Submit</button>
