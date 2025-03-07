@@ -28,6 +28,9 @@ import {default as ShowProjects} from './components/backend/projects/Show';
 import { default as EditProject } from "./components/backend/projects/Edit";
 import { default as CreateProject} from "./components/backend/projects/Create";
 import ProjectDetail from './components/frontend/ProjectDetail';
+
+import {default as ShowArticles} from './components/backend/articles/Show';
+import {default as CreateArticle} from './components/backend/articles/Create';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -107,6 +110,16 @@ function App() {
    <Route path='/admin/projects/edit/:id' element={
             <RequireAuth>
             <EditProject/>
+            </RequireAuth>
+   } />
+      <Route path='/admin/articles' element={
+            <RequireAuth>
+            <ShowArticles/>
+            </RequireAuth>
+   } />
+       <Route path='/admin/articles/create' element={
+            <RequireAuth>
+            <CreateArticle/>
             </RequireAuth>
    } />
         </Routes>

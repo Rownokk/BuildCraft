@@ -45,7 +45,7 @@ class ArticleController extends Controller
         // Validate the request data
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'slug' => 'required|unique:articles,slug'.$id.',id'
+            'slug' => 'required|unique:articles,slug,' ,
         ]);
 
         // If validation fails, return error messages
@@ -197,7 +197,7 @@ if($article->image != ''){
        $article->delete();
        return response()->json([
         'status' => true,
-        'message' => "Article deleted successfully "
+        'message' => "Article deleted successfully found"
     ]);
 }
 }
