@@ -14,6 +14,7 @@ Route::post('authenticate', [AuthenticationController::class, 'authenticate']);
 Route::get('get-services', [FrontServiceController    ::class, 'index']);
 Route::get('get-latest-services', [FrontServiceController    ::class, 'latestServices']);
 Route::get('get-members', [FrontMemberController    ::class, 'index']);
+Route::get('get-service/{id}', [FrontServiceController    ::class, 'service']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
