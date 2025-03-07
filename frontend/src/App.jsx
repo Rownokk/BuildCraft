@@ -24,7 +24,7 @@ import {default as EditMember} from './components/backend/members/Edit';
 import { default as CreateService } from "./components/backend/services/Create";
 import { default as EditService } from "./components/backend/services/Edit";
 import ServiceDetail from './components/frontend/ServiceDetail';
-
+import {default as ShowProjects} from './components/backend/projects/Show';
 function App() {
   const [count, setCount] = useState(0);
 
