@@ -25,12 +25,12 @@ class ArticleController extends Controller
         // Placeholder for index method (to be implemented)
        $article =Article::find($id) ;
        if( $article==null)
-
+  
         {return response()->json([
-            'status' => true,
+            'status' => false,
             'message' => "Article not found"
         ]);
-       }
+       }  
        return response()->json([
         'status' => true,
         'errors' => $article
@@ -45,7 +45,7 @@ class ArticleController extends Controller
         // Validate the request data
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'slug' => 'required|unique:articles,slug'
+            'slug' => 'required|unique:articles,slug'.$id.',id'
         ]);
 
         // If validation fails, return error messages
@@ -58,6 +58,75 @@ class ArticleController extends Controller
 
         // Create new Article instance
         $article = new Article();
+        $article->title = $request->title;
+        $article->slug = Str::slug($request->slug);
+        $article->author = $request->author;
+        $article->content = $request->content;
+        $article->status = $request->status;
+        $article->save();
+
+        if ($request->imageId > 0) {
+        
+            $tempImage = TempImage::find($request->imageId);
+            if ($tempImage != null) {
+                $extArray = explode('.', $tempImage->name);
+                $ext = last($extArray);
+                $fileName = strtotime('now') . $article->id . '.' . $ext;
+
+                $sourcePath = public_path('uploads/temp/' . $tempImage->name);
+                $destPathSmall = public_path('uploads/articles/small/' . $fileName);
+                $manager = new ImageManager(Driver::class);
+                $image = $manager->read($sourcePath);
+         
+                $image->resize(450, 300); 
+                $image->save($destPathSmall);
+
+                // Create large thumbnail
+                $destPathLarge = public_path('uploads/articles/large/' . $fileName);
+                $manager = new ImageManager(Driver::class);
+                $image = $manager->read($sourcePath);
+                $image->resize(); // Resize width, keeping aspect ratio
+                $image->save($destPathLarge);
+
+                // Save the new image file name to the article
+                $article->image = $fileName;
+                $article->save();
+            }
+        }
+
+        // Return success response
+        return response()->json([
+            'status' => true,
+            'message' => 'Article added successfully'
+        ]);
+       
+     }
+      public function update($id, Request $request) {
+        $article =  Article::find($id);
+        if( $article==null)
+
+        {return response()->json([
+            'status' => false,
+            'message' => "Article not found"
+        ]);
+       }   $oldImage = $article->image;         
+        $request->merge(['slug' => Str::slug($request->slug)]);
+
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'slug' => 'required|unique:articles,slug'
+        ]);
+
+     
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => false,
+                'errors' => $validator->errors()
+            ]);
+        }
+
+        // Create new Article instance
+   
         $article->title = $request->title;
         $article->slug = Str::slug($request->slug);
         $article->author = $request->author;
@@ -94,13 +163,20 @@ class ArticleController extends Controller
                 // Save the new image file name to the article
                 $article->image = $fileName;
                 $article->save();
+                
+if($oldImage != ''){
+    File::delete(public_path('uploads/articles/large/'.$oldImage));
+    File::delete(public_path('uploads/articles/small/'.$oldImage)); 
+}
             }
         }
 
         // Return success response
         return response()->json([
             'status' => true,
-            'message' => 'Article added successfully'
+            'message' => 'Article update successfully'
         ]);
+       
+
     }
 }
