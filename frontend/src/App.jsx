@@ -23,6 +23,7 @@ import {default as EditMember} from './components/backend/members/Edit';
 
 import { default as CreateService } from "./components/backend/services/Create";
 import { default as EditService } from "./components/backend/services/Edit";
+import ServiceDetail from './components/frontend/ServiceDetail';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +36,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/service/:id' element={<ServiceDetail />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/admin/login' element={<Login/>} />
