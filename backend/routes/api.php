@@ -21,6 +21,7 @@ Route::post('contact-now', [ContactController::class, 'index']);
 
 Route::get('get-projects', [FrontProjectController    ::class, 'index']);
 Route::get('get-latest-projects', [FrontProjectController    ::class, 'latestProjects']);
+Route::get('get-project/{id}', [FrontProjectController    ::class, 'project']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
