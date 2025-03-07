@@ -8,7 +8,7 @@ use App\Http\Controllers\admin\ProjectController;
 use App\Http\Controllers\admin\TempImageController;
 use App\Http\Controllers\admin\MemberController;
 use App\Http\Controllers\front\ContactController;
-
+use App\Http\Controllers\front\ProjectController as FrontProjectController;
 use App\Http\Controllers\front\ServiceController as FrontServiceController;
 use App\Http\Controllers\admin\MemberController as FrontMemberController;
 
@@ -18,6 +18,9 @@ Route::get('get-latest-services', [FrontServiceController    ::class, 'latestSer
 Route::get('get-members', [FrontMemberController    ::class, 'index']);
 Route::get('get-service/{id}', [FrontServiceController    ::class, 'service']);
 Route::post('contact-now', [ContactController::class, 'index']);
+
+Route::get('get-projects', [FrontProjectController    ::class, 'index']);
+Route::get('get-latest-projects', [FrontProjectController    ::class, 'latestProjects']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
