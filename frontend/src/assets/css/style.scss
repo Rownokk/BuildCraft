@@ -366,6 +366,12 @@ footer {
     }
 }
 
+.section-10{
+    .sidebar{
+        border-radius: 40px;
+    }
+}
+
 // Responsive adjustments
 @media (max-width: 768px) {
     .section-8 .card {

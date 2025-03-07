@@ -28,11 +28,31 @@ const ServiceDetail = () => {
     <>
         <Header/>
         <main>
+           
         <Hero 
           preHeading="Quality. Integrity. Value" 
           heading={`${service.title}`}
           text=" "
         />
+         <section className='section-10'>
+
+
+        <div className='container py-5'>
+         <div className='row'>
+           <div className='col-md-3'>
+            <div className='card shadow border-0 sidebar'>
+                  <div className='card-body px-4 py-4'>
+                  <h3 className='mt-2 mb-3'>Our Services</h3>
+                  </div>
+            </div>
+
+           </div>
+           <div className='col-md-9'>
+
+           </div>
+         </div>
+        </div>
+        </section>
         </main>
         
 
