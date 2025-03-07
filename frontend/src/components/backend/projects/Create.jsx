@@ -55,7 +55,7 @@ const Create = ({ placeholder }) => {
     const formData = new FormData();
     const file = e.target.files[0];
     formData.append('image', file);
-
+  setIsDisable(true);
     await fetch(apiUrl + 'temp-image', {
       method: 'POST',
       headers: {
@@ -66,6 +66,7 @@ const Create = ({ placeholder }) => {
     })
       .then((response) => response.json())
       .then((result) => {
+        setIsDisable(false);
         if (result.status === false) {
           toast.error(result.errors.image[0]);
         } else {
@@ -88,7 +89,7 @@ const Create = ({ placeholder }) => {
                 <div className="card-body p-4">
                   <div className="d-flex justify-content-between">
                     <h4 className="h5">Projects / Create</h4>
-                    <Link to="/admin/services" className="btn btn-primary">
+                    <Link to="/admin/projects" className="btn btn-primary">
                       Back
                     </Link>
                   </div>
