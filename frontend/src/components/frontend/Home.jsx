@@ -30,6 +30,7 @@ import ConstImg9 from '../../assets/images/download (1).jpg';
 import { apiUrl, token } from '../common/http';
 import { set } from 'react-hook-form';
 import LatestServices from '../common/LatestServices';
+import LatestProjects from '../common/LatestProjects';
 
 
 
@@ -143,104 +144,7 @@ const Home = () => {
                   </div>
                </div>
             </section>
-            <section className='section-3 bg-light py-5'>
-               <div className='container-fluid py-5'>
-                  <div className='section-header text-center'>
-                     <span>our projects</span>
-                     <h2>Discover our diverse range of projects</h2>
-                     <p>We build homes that reflect your style and needs, combining modern designs with durable construction techniques. </p>
-                  </div>
-                  <div className='row'>
-
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ConstImg2} alt="" className='w-100' />
-                              
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Bashundhara Project</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    A modern construction initiative in one of the most vibrant commercial and residential areas, designed for luxury, convenience, and business growth, integrating contemporary architecture with premium facilities.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ConstImg3} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>   Baridhara Project</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    A rapidly developing residential hub offering well-planned infrastructure, modern amenities, and a comfortable living experience, catering to families and professionals seeking a peaceful yet connected lifestyle.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ConstImg4} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Uttara Project</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    A visionary development featuring expansive residential and commercial spaces, emphasizing sustainability, green living, and future-ready infrastructure, making it one of the most sought-after locations.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                     <div className='col-md-3 col-lg-3'>
-                        <div className='item'>
-                           <div className='service-image'>
-
-                              <img src={ConstImg5} alt="" className='w-100' />
-                           </div>
-                           <div className='service-body'>
-                              <div className='service-title'>
-                                 <h3>Banani Project</h3>
-                                 <div className='service-contain'>
-                                    <p>
-                                    An exclusive, high-end residential and diplomatic area with premium homes and elite facilities, ensuring privacy, security, and an upscale living environment in a prestigious neighborhood.
-                                    </p>
-                                 </div>
-                                 <a href='#' className='btn btn-primary small'>Read More</a>
-                              </div>
-
-                           </div>
-                        </div>
-
-                     </div>
-                  </div>
-               </div>
-
-            </section>
+         <LatestProjects/>
 
             <section className='section-5 py-5'>
                <div className='container'>
