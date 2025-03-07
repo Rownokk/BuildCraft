@@ -29,7 +29,8 @@ const LatestProjects = () => {
                     <p>We build homes that reflect your style and needs, combining modern designs with durable construction techniques. </p>
                 </div>
                 <div className='row pt-4'>
-                    {projects && projects.map(project => (
+                    {projects && projects.map(project =>
+                     (
                         <div key={project.id} className='col-md-3 col-lg-3'>
                             <div className='item'>
                                 <div className='service-image'>
