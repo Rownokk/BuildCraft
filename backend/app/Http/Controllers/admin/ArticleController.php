@@ -15,7 +15,9 @@ class ArticleController extends Controller
 {
     public function index() {
         // Placeholder for index method (to be implemented)
-       $articles =Article::orderBy("created_at", 'DESC')->get() ;
+       $articles =Article::orderBy("created_at", 'DESC')
+       ->where ('status',1)
+       ->get() ;
        return response()->json([
         'status' => true,
         'errors' => $articles
@@ -198,6 +200,16 @@ if($article->image != ''){
        return response()->json([
         'status' => true,
         'message' => "Article deleted successfully found"
+    ]);
+}
+public function latestArticles(Request $request){
+    $articles =Article::orderBy("created_at", 'DESC')
+       ->where ('status',1)
+       ->limit($request->limit)
+       ->get() ;
+       return response()->json([
+        'status' => true,
+        'errors' => $articles
     ]);
 }
 }
