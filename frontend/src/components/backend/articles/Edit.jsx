@@ -1,9 +1,9 @@
 import React from 'react';
 
-const LatestArticles = () => {
+const Edit = () => {
   return (
     <div>Latest Articles</div>
   );
 };
 
-export default LatestArticles;
+export default Edit;
